@@ -1,5 +1,6 @@
 angular.module('app')
   .controller('FriendController', function($scope){
+    $scope.sortProp = "name";
 
   $scope.friends = [
     {
@@ -434,4 +435,9 @@ angular.module('app')
     }
   ]
 
+  for (var i = 0; i < $scope.friends.length; i++) {
+    if (!$scope.friends[i].current_location) {
+    
+    }
+  }
   });
